@@ -1,0 +1,364 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\migrations\\appcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\migrations\\appcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\migrations\\20241016195529_init.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\migrations\\20241016195529_init.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195529_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Online-Learning-Platform\\Migrations\\20241016195529_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\datacontext\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\datacontext\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195251_init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Online-Learning-Platform\\Migrations\\20241016195251_init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194938_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Online-Learning-Platform\\Migrations\\20241016194938_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194718_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Online-Learning-Platform\\Migrations\\20241016194718_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|c:\\users\\amr khaled\\desktop\\programming\\c#\\online-learning-platform\\online-learning-platform\\online-learning-platform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\online-learning-platform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\AppContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\AppContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\AppContextModelSnapshot.cs*",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\AppContextModelSnapshot.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:55:59.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241016195529_init.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195529_init.Designer.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016195529_init.Designer.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195529_init.Designer.cs*",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016195529_init.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:55:42.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241016195529_init.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195529_init.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016195529_init.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195529_init.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016195529_init.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:55:30.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241016195251_init2.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195251_init2.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016195251_init2.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016195251_init2.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016195251_init2.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:52:51.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\AppUser.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:34:57.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAIAwwGAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:39:12.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20241016194718_init.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194718_init.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016194718_init.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194718_init.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016194718_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:47:18.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\DataContext\\AppContext.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\DataContext\\AppContext.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\DataContext\\AppContext.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\DataContext\\AppContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:30:02.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Program.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Program.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Program.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:22:01.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241016194938_init.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194938_init.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016194938_init.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194938_init.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016194938_init.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:49:39.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241016194512_AddAppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Migrations\\20241016194512_AddAppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:45:12.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:53:06.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:43:26.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Online-Learning-Platform\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:53:58.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Online-Learning-Platform\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T17:39:36.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Online-Learning-Platform\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T18:25:03.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Online-Learning-Platform\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T18:29:44.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Online-Learning-Platform\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T17:43:51.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\appsettings.json",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\appsettings.json",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\appsettings.json",
+              "RelativeToolTip": "Online-Learning-Platform\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-13T17:26:17.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Online-Learning-Platform.csproj",
+              "DocumentMoniker": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform.csproj",
+              "RelativeDocumentMoniker": "Online-Learning-Platform\\Online-Learning-Platform.csproj",
+              "ToolTip": "C:\\Users\\Amr Khaled\\Desktop\\Programming\\C#\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform.csproj",
+              "RelativeToolTip": "Online-Learning-Platform\\Online-Learning-Platform.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-13T17:25:39.097Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
