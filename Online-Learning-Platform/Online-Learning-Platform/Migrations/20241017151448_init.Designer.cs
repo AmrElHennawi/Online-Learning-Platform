@@ -11,8 +11,8 @@ using Online_Learning_Platform.DataContext;
 
 namespace Online_Learning_Platform.Migrations
 {
-    [DbContext(typeof(DataContext.AppContext))]
-    [Migration("20241016195529_init")]
+    [DbContext(typeof(DBContext))]
+    [Migration("20241017151448_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -161,7 +161,7 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "1a504b53-f721-453c-86ff-e1a6643dc053",
+                            UserId = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
                             RoleId = "1"
                         });
                 });
@@ -263,9 +263,9 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1a504b53-f721-453c-86ff-e1a6643dc053",
+                            Id = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b613152f-e60f-40b6-bf12-aad04af77e9e",
+                            ConcurrencyStamp = "83c4860d-e6f9-417a-9519-0272e6d0448e",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Root",
@@ -274,7 +274,7 @@ namespace Online_Learning_Platform.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGNTX6krjONgEWZTRiiz7S7YslkgVSbFrnhqD0h9bW4dt+knY3Z3qwnvZmYyQNO+rA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFxTfL36KmL0vOkCfo8rZj7bYpHhn3ru6wBUynFgd4B/DBiijcsdJhdDzedkeO0u1Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

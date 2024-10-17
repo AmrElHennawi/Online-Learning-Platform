@@ -5,16 +5,15 @@ using Online_Learning_Platform.Models;
 
 namespace Online_Learning_Platform.DataContext
 {
-    public class AppContext : IdentityDbContext<AppUser>
+    public class DBContext : IdentityDbContext<AppUser>
     {
-        public AppContext(DbContextOptions<AppContext> options) : base(options)
+        public DBContext(DbContextOptions<DBContext> options) : base(options)
         {
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
 
             modelBuilder.Entity<IdentityRole>().HasData(
                 new IdentityRole { Id = "1", Name = "Admin", NormalizedName = "ADMIN" },

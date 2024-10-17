@@ -11,10 +11,10 @@ namespace Online_Learning_Platform.Controllers
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
-		private readonly DataContext.AppContext _dbcontext;
+		private readonly DBContext _dbcontext;
 
 		public AccountController(UserManager<AppUser> userManager,
-			SignInManager<AppUser> signInManager, DataContext.AppContext dbcontext)
+			SignInManager<AppUser> signInManager, DBContext dbcontext)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
@@ -32,13 +32,21 @@ namespace Online_Learning_Platform.Controllers
 		{
 			if (ModelState.IsValid)
 			{
+				string type;
+				if (_signInManager.IsSignedIn(User)) type = "Teacher";
+				else type = "Student";
+
 				var user = new AppUser
 				{
+					FirstName = model.FirstName,
+					LastName = model.LastName,
 					UserName = model.Email,
 					Email = model.Email
 				};
 
-				var result = await _userManager.CreateAsync(user, model.Password);
+                await _userManager.AddToRoleAsync(user, type);
+
+                var result = await _userManager.CreateAsync(user, model.Password);
 
 				if (result.Succeeded)
 				{

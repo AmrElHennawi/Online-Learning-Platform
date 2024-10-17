@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Online_Learning_Platform.Services;
 using Online_Learning_Platform.DataContext;
 using Online_Learning_Platform.Models;
 
@@ -15,14 +16,16 @@ namespace Online_Learning_Platform
 			builder.Services.AddControllersWithViews();
 
 
-			builder.Services.AddDbContext<DataContext.AppContext>(options =>
+			builder.Services.AddDbContext<DBContext>(options =>
 				options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 			builder.Services.AddIdentity<AppUser, IdentityRole>()
-				.AddEntityFrameworkStores<DataContext.AppContext>();
+				.AddEntityFrameworkStores<DBContext>();
 
-			var app = builder.Build();
+            builder.Services.AddScoped<PermissionService>();
+
+            var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())
@@ -40,21 +43,16 @@ namespace Online_Learning_Platform
 			app.UseAuthentication();
 			app.UseAuthorization();
 
-			//app.MapControllerRoute(
-			//	name: "default",
-			//	pattern: "{controller=Home}/{action=Index}/{id?}");
 
-			app.UseEndpoints(endpoints =>
-			{
-				endpoints.MapControllerRoute(
-					name: "areas",
-					pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-				endpoints.MapControllerRoute(
-					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
-			});
+            app.MapControllerRoute(
+				name: "areas",
+				pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-			app.Run();
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
 		}
 	}
 }
