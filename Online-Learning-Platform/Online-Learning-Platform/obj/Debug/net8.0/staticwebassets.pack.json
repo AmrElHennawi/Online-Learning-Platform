@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\wwwroot\\images\\BG.jpg",
+      "PackagePath": "staticwebassets\\images\\BG.jpg"
+    },
+    {
       "Id": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

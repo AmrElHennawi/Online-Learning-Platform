@@ -20,3 +20,60 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../images/BG.jpg");
+    background-size:cover;
+}
+
+    .hero-section h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+
+    .hero-section .btn-primary {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+.background-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+    .background-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .background-section p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+
+.custom_footer {
+    width:100%;
+    display:flex;
+    position:absolute;
+    bottom:0px;
+    justify-content:center
+}

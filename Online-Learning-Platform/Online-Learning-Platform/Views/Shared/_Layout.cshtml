@@ -10,7 +10,6 @@
     <title>@ViewData["Title"] - Online_Learning_Platform</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Online_Learning_Platform.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -23,9 +22,6 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
                         @if (signInManager.IsSignedIn(User))
                         {
                             @if (await ps.CheckTypeAsync(User, "Admin"))
@@ -35,9 +31,6 @@
                                 </li>
                             }
                         }
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
                     </ul>
                     <ul class="navbar-nav">
                         @if (signInManager.IsSignedIn(User))
@@ -73,10 +66,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Online_Learning_Platform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="custom_footer border-top footer text-muted">
+        <p>
+            &copy; 2024 - Online_Learning_Platform - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        </p>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

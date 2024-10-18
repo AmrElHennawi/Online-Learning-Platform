@@ -1,8 +1,28 @@
-﻿@{
+﻿@inject SignInManager<AppUser> signInManager;
+@model AppUser
+
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section">
+    <h1>Welcome to Our E-Learning Platform</h1>
+    @if (signInManager.IsSignedIn(User))
+    {
+        <h4>Hi, @Model.FirstName @Model.LastName</h4>
+    }
+    <p>
+        Explore a wide variety of courses and expand your knowledge at your own
+        pace. Join us and start learning from the best instructors worldwide.
+    </p>
+    @if (!signInManager.IsSignedIn(User))
+    {
+        <a asp-action="login" asp-controller="account" class="btn bg-transparent text-white">Let's Start</a>
+    }
+    else
+    {
+        <a asp-action="" asp-controller="" class="btn bg-transparent text-white">Check Courses</a>
+    }
 </div>
