@@ -158,7 +158,7 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
+                            UserId = "d436a406-5777-4eea-82f9-7263a37bd0bc",
                             RoleId = "1"
                         });
                 });
@@ -260,9 +260,9 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
+                            Id = "d436a406-5777-4eea-82f9-7263a37bd0bc",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "83c4860d-e6f9-417a-9519-0272e6d0448e",
+                            ConcurrencyStamp = "fab35b5b-9a0d-43c7-ae8e-65b7e08993b9",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Root",
@@ -271,7 +271,7 @@ namespace Online_Learning_Platform.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFxTfL36KmL0vOkCfo8rZj7bYpHhn3ru6wBUynFgd4B/DBiijcsdJhdDzedkeO0u1Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENddKGPo4qExFtBKoL9bivEDWtwEl1kAWKUMjeGItDReSzE241/7drnfheh0Ibf5gw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

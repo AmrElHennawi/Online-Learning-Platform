@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|d:\\online-learning-platform\\online-learning-platform\\online-learning-platform\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|d:\\online-learning-platform\\online-learning-platform\\online-learning-platform\\datacontext\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\datacontext\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|d:\\online-learning-platform\\online-learning-platform\\online-learning-platform\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|d:\\online-learning-platform\\online-learning-platform\\online-learning-platform\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139B887D-9359-4DC6-838C-76049F90C0E7}|Online-Learning-Platform\\Online-Learning-Platform.csproj|solutionrelative:online-learning-platform\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,59 +17,11 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBContext.cs",
-              "DocumentMoniker": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\DataContext\\DBContext.cs",
-              "RelativeDocumentMoniker": "Online-Learning-Platform\\DataContext\\DBContext.cs",
-              "ToolTip": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\DataContext\\DBContext.cs",
-              "RelativeToolTip": "Online-Learning-Platform\\DataContext\\DBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:20:22.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Online-Learning-Platform\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Online-Learning-Platform\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:06:18.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Online-Learning-Platform\\Models\\AppUser.cs",
-              "ToolTip": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\AppUser.cs",
-              "RelativeToolTip": "Online-Learning-Platform\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:06:04.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Online-Learning-Platform\\Models\\Course.cs",
-              "ToolTip": "D:\\Online-Learning-Platform\\Online-Learning-Platform\\Online-Learning-Platform\\Models\\Course.cs",
-              "RelativeToolTip": "Online-Learning-Platform\\Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:53:43.541Z",
-              "EditorCaption": ""
             }
           ]
         }

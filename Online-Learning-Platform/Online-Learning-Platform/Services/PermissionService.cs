@@ -23,11 +23,8 @@ namespace Online_Learning_Platform.Services
         {
             var user = await _userManager.GetUserAsync(userprincipal);
 
-            var roles = await _userManager.GetRolesAsync(user);
-
-
-
-            return roles.Contains(type);
+            bool res = await _userManager.IsInRoleAsync(user, type);
+            return res;
         }
     }
 }
