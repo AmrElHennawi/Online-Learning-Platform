@@ -94,11 +94,16 @@ namespace Online_Learning_Platform.Controllers
         [HttpPost]
         public async Task<IActionResult> EditRolesInUser(UserEditViewModel model, string NewRole, string userId)
         {
+            model.SelectedRoles = new List<SelectListItem>
+                {
+                    new SelectListItem { Value = "Student", Text = "Student" },
+                    new SelectListItem { Value = "Teacher", Text = "Teacher" }
+                };
 
-            AppUser? user = await userManager.FindByIdAsync(userId);
+            AppUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                return NotFound();
+                return View(model);
             }
 
             var currentRoles = await userManager.GetRolesAsync(user);

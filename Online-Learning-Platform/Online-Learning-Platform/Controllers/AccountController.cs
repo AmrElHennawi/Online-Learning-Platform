@@ -52,6 +52,7 @@ namespace Online_Learning_Platform.Controllers
 				{
 					await _userManager.AddToRoleAsync(user, type);
 
+					if (type == "Teacher") return RedirectToAction("ListUsers", "admin");
 					return RedirectToAction("Login", "Account");
 				}
 
