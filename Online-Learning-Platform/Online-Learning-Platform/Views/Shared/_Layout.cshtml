@@ -24,10 +24,22 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (signInManager.IsSignedIn(User))
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="course" asp-action="getallcourses">GetAllCourses</a>
+                            </li>
                             @if (await ps.CheckTypeAsync(User, "Admin"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="admin" asp-action="listusers">List Users</a>
+                                    <a class="nav-link text-dark" asp-controller="admin" asp-action="listusers">List Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Create Teacher</a>
+                                </li>
+                            }
+                            @if (await ps.CheckTypeAsync(User, "Teacher"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="course" asp-action="createcourse">CreateCourse</a>
                                 </li>
                             }
                         }
@@ -35,12 +47,6 @@
                     <ul class="navbar-nav">
                         @if (signInManager.IsSignedIn(User))
                         {
-                            @if (await ps.CheckTypeAsync(User, "Admin"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
-                                </li>
-                            }
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                             </li>
@@ -74,7 +80,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <partial name="_ValidationScriptsPartial"/>
+    <partial name="_ValidationScriptsPartial" />
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

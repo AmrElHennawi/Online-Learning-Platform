@@ -1,0 +1,38 @@
+﻿@model Course
+
+@{
+  ViewData["Title"] = "Create Course";
+}
+
+<div class="container mt-5">
+  <h2>Create New Course</h2>
+
+  <form asp-action="CreateCourse" asp-controller="Course" method="post">
+    <div class="form-group">
+      <label asp-for="Title" class="form-label"></label>
+      <input asp-for="Title" class="form-control" />
+      <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+      <label asp-for="Description" class="form-label"></label>
+      <textarea asp-for="Description" class="form-control"></textarea>
+      <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+      <label asp-for="Content" class="form-label"></label>
+      <textarea asp-for="Content" class="form-control"></textarea>
+      <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+      <label asp-for="Progress" class="form-label"></label>
+      <input asp-for="Progress" class="form-control" type="number" min="0" max="100" />
+      <span asp-validation-for="Progress" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Create</button>
+    <a class="btn btn-secondary mt-3" href="@Url.Action("GetAllCourses", "Course")">Cancel</a>
+  </form>
+</div>

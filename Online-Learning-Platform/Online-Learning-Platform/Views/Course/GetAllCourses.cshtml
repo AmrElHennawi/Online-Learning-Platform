@@ -1,0 +1,48 @@
+﻿@inject PermissionService ps;
+@model IEnumerable<Course>
+
+@{
+    ViewData["Title"] = "All Courses";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">All Courses</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Progress</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model)
+            {
+                <tr>
+                    <td>@course.Title</td>
+                    <td>@course.Description</td>
+                    <td>@course.Progress %</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="@Url.Action("GetCourse", "Course", new { id = course.CourseId })">View</a>
+                        @if (!await ps.CheckTypeAsync(User, "Student"))
+                        {
+                            @if (await ps.CheckTeacherCourseAsync(User, course) || await ps.CheckTypeAsync(User, "Admin"))
+                            {
+                                <a class="btn btn-warning btn-sm" href="@Url.Action("UpdateCourse", "Course", new { id = course.CourseId })">Edit</a>
+                                <form asp-action="DeleteCourse" asp-controller="Course" asp-route-id="@course.CourseId" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this course?');">Delete</button>
+                                </form>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (await ps.CheckTypeAsync(User, "Teacher"))
+    {
+        <a class="btn btn-success" href="@Url.Action("CreateCourse", "Course")">Create New Course</a>
+    }
+
+</div>
