@@ -158,7 +158,7 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
+                            UserId = "866ab798-53e8-445c-b996-85c19fc1a50e",
                             RoleId = "1"
                         });
                 });
@@ -260,9 +260,9 @@ namespace Online_Learning_Platform.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ae0021c1-15d0-4c09-a97f-0fd1e9947e34",
+                            Id = "866ab798-53e8-445c-b996-85c19fc1a50e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "83c4860d-e6f9-417a-9519-0272e6d0448e",
+                            ConcurrencyStamp = "cc9f6af6-34b8-4a2c-89c0-5d8f0ba2a167",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Root",
@@ -271,12 +271,73 @@ namespace Online_Learning_Platform.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFxTfL36KmL0vOkCfo8rZj7bYpHhn3ru6wBUynFgd4B/DBiijcsdJhdDzedkeO0u1Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOUeevNtOTOs5+JMCsjw37mf/gyJ1+pfEgvqzvEBH2dA/zxXg6oCPzbtkWkJLonHhQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
                         });
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.Course", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseId"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Progress")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CourseId");
+
+                    b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.CourseTeacher", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TeacherId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CourseId", "TeacherId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("CourseTeachers");
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.Enrollment", b =>
+                {
+                    b.Property<string>("StudentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EnrollmentDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("StudentId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Enrollments");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -328,6 +389,58 @@ namespace Online_Learning_Platform.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.CourseTeacher", b =>
+                {
+                    b.HasOne("Online_Learning_Platform.Models.Course", "Course")
+                        .WithMany("CourseTeachers")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Online_Learning_Platform.Models.AppUser", "Teacher")
+                        .WithMany("CourseTeachers")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.Enrollment", b =>
+                {
+                    b.HasOne("Online_Learning_Platform.Models.Course", "Course")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Online_Learning_Platform.Models.AppUser", "Student")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.AppUser", b =>
+                {
+                    b.Navigation("CourseTeachers");
+
+                    b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("Online_Learning_Platform.Models.Course", b =>
+                {
+                    b.Navigation("CourseTeachers");
+
+                    b.Navigation("Enrollments");
                 });
 #pragma warning restore 612, 618
         }

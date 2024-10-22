@@ -1,0 +1,39 @@
+﻿@inject PermissionService ps;
+@model Course
+
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<div class="container mt-5">
+    <h2>@Model.Title</h2>
+    <p>@Model.Description</p>
+    <p><strong>Content:</strong> @Model.Content</p>
+    <p><strong>Progress:</strong> @Model.Progress %</p>
+
+    <h4 class="mt-4">Teachers</h4>
+    <ul>
+        @foreach (var teacher in Model.CourseTeachers)
+        {
+            <li>@teacher.Teacher.FirstName @teacher.Teacher.LastName</li>
+        }
+    </ul>
+    @if (!await ps.CheckTypeAsync(User, "Student"))
+    {
+        <h4 class="mt-4">Enrolled Students</h4>
+        <ul>
+            @foreach (var enrollment in Model.Enrollments)
+            {
+                <li>@enrollment.Student.FirstName @enrollment.Student.LastName - Enrolled on @enrollment.EnrollmentDate.ToShortDateString()</li>
+            }
+        </ul>
+    }
+    <div class="d-flex flex-row mt-3 justify-content-between">
+        @if (await ps.CheckTypeAsync(User,"Student") && ! await ps.CheckStudentEnrollInCourseAsync(User,Model)) {
+            <form asp-action="EnrolleStudent" asp-route-id="@Model.CourseId">
+                <button class="btn btn-primary">Enroll</button>
+            </form>
+        }
+        <a class="btn btn-secondary" href="@Url.Action("GetAllCourses", "Course")">Back to Courses</a>
+    </div>
+</div>

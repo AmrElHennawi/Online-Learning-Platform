@@ -44,12 +44,15 @@ namespace Online_Learning_Platform.Controllers
 					Email = model.Email
 				};
 
-                await _userManager.AddToRoleAsync(user, type);
 
                 var result = await _userManager.CreateAsync(user, model.Password);
 
-				if (result.Succeeded)
+
+                if (result.Succeeded)
 				{
+					await _userManager.AddToRoleAsync(user, type);
+
+					if (type == "Teacher") return RedirectToAction("ListUsers", "admin");
 					return RedirectToAction("Login", "Account");
 				}
 

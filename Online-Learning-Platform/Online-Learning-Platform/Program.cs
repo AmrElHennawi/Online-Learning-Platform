@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Online_Learning_Platform.Services;
 using Online_Learning_Platform.DataContext;
 using Online_Learning_Platform.Models;
+using Online_Learning_Platform.CustomMiddleware;
 
 namespace Online_Learning_Platform
 {
@@ -43,6 +44,7 @@ namespace Online_Learning_Platform
 			app.UseAuthentication();
 			app.UseAuthorization();
 
+            app.UseMiddleware<CheckUserActiveMiddleware>();
 
             app.MapControllerRoute(
 				name: "areas",

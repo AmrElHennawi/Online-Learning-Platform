@@ -23,11 +23,25 @@ namespace Online_Learning_Platform.Services
         {
             var user = await _userManager.GetUserAsync(userprincipal);
 
-            var roles = await _userManager.GetRolesAsync(user);
+            bool res = await _userManager.IsInRoleAsync(user, type);
+            return res;
+        }
 
+        public async Task<bool> CheckTeacherCourseAsync(ClaimsPrincipal userprincipal, Course Course)
+        {
+            var user = await _userManager.GetUserAsync(userprincipal);
 
+            var isfound = Course.CourseTeachers.FirstOrDefault(ct => ct.TeacherId == user.Id);
 
-            return roles.Contains(type);
+            return isfound != null;
+        }
+        public async Task<bool> CheckStudentEnrollInCourseAsync(ClaimsPrincipal userprincipal, Course Course)
+        {
+            var user = await _userManager.GetUserAsync(userprincipal);
+
+            var isfound = Course.Enrollments.FirstOrDefault(ct => ct.StudentId == user.Id);
+
+            return isfound != null;
         }
     }
 }
