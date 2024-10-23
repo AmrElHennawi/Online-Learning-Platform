@@ -1,5 +1,7 @@
 ﻿@inject SignInManager<AppUser> signInManager;
 @inject PermissionService ps;
+@inject UserManager<AppUser> UserManager
+
 
 
 <!DOCTYPE html>
@@ -47,6 +49,10 @@
                     <ul class="navbar-nav">
                         @if (signInManager.IsSignedIn(User))
                         {
+                            var userId = UserManager.GetUserId(User);
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Profile" asp-route-id="@userId">Profile</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                             </li>

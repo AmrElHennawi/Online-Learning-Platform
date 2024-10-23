@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Online_Learning_Platform.DataContext;
+using Online_Learning_Platform.Interfaces;
 using Online_Learning_Platform.Models;
 using Online_Learning_Platform.ViewModels;
 
@@ -11,14 +14,14 @@ namespace Online_Learning_Platform.Controllers
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
-		private readonly DBContext _dbcontext;
+		private readonly IAccountService _accountService;
 
 		public AccountController(UserManager<AppUser> userManager,
-			SignInManager<AppUser> signInManager, DBContext dbcontext)
+			SignInManager<AppUser> signInManager, DBContext context, RoleManager<IdentityRole> roleManager, IAccountService accountService)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
-			_dbcontext = dbcontext;
+			_accountService = accountService;
 		}
 
 		[HttpGet]
@@ -45,10 +48,10 @@ namespace Online_Learning_Platform.Controllers
 				};
 
 
-                var result = await _userManager.CreateAsync(user, model.Password);
+				var result = await _userManager.CreateAsync(user, model.Password);
 
 
-                if (result.Succeeded)
+				if (result.Succeeded)
 				{
 					await _userManager.AddToRoleAsync(user, type);
 
@@ -112,5 +115,13 @@ namespace Online_Learning_Platform.Controllers
 				return Json(true);
 			}
 		}
+
+		[Authorize]
+		public async Task<IActionResult> Profile(string id)
+		{
+			var profileView = await _accountService.GetProfileAsync(id, User);
+			return View(profileView);
+		}
 	}
 }
+

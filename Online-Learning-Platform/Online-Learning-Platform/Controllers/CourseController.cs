@@ -1,50 +1,37 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Online_Learning_Platform.DataContext;
+using Online_Learning_Platform.Interfaces;
 using Online_Learning_Platform.Models;
-using System.Collections.Immutable;
 
 namespace Online_Learning_Platform.Controllers
 {
     public class CourseController : Controller
     {
-        private readonly DBContext _context;
+        private readonly ICourseRepository _courseRepository;
         private readonly UserManager<AppUser> _userManager;
-        private readonly SignInManager<AppUser> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly DBContext _context;
 
-        public CourseController(DBContext dbContext, UserManager<AppUser> userManager,
-                                RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager)
+        public CourseController(ICourseRepository courseRepository, UserManager<AppUser> userManager, DBContext context)
         {
-            _context = dbContext;
+            _courseRepository = courseRepository;
             _userManager = userManager;
-            _signInManager = signInManager;
-            _roleManager = roleManager;
+            _context = context;
         }
 
-        // GET: Get all courses
         [Authorize]
-        public async Task<IActionResult> GetAllCourses()
+        public async Task<IActionResult> GetAllCourses(string? searchString)
         {
-            var courses = await _context.Courses
-                .Include(c => c.CourseTeachers)
-                .Include(c => c.Enrollments)
-                .ToListAsync();
-            return View(courses); // Assuming you have a view that takes a list of courses.
+            var courses = await _courseRepository.GetAllCoursesAsync(searchString);
+            return View(courses);
         }
 
-        // GET: Get a course by ID
+
         [Authorize]
         public async Task<IActionResult> GetCourse(int id)
         {
-            var course = await _context.Courses
-                .Include(c => c.CourseTeachers)
-                    .ThenInclude(ct => ct.Teacher)
-                .Include(c => c.Enrollments)
-                    .ThenInclude(e => e.Student)
-                .FirstOrDefaultAsync(c => c.CourseId == id);
+            var course = await _courseRepository.GetCourseByIdAsync(id);
 
             if (course == null)
             {
@@ -54,7 +41,6 @@ namespace Online_Learning_Platform.Controllers
             return View(course);
         }
 
-        // GET: Display form to create a new course
         [Authorize(Roles = "Teacher")]
         public IActionResult CreateCourse()
         {
@@ -84,19 +70,17 @@ namespace Online_Learning_Platform.Controllers
         }
 
 
-        // GET: Display form to update an existing course
         [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> UpdateCourse(int id)
         {
-            var course = await _context.Courses.FindAsync(id);
+            var course = await _courseRepository.GetCourseByIdAsync(id);
             if (course == null)
             {
                 return NotFound();
             }
-            return View(course); // Assuming you have a form in the view for editing a course.
+            return View(course);
         }
 
-        // POST: Update an existing course
         [HttpPost]
         [Authorize(Roles = "Admin,Teacher")]
         [ValidateAntiForgeryToken]
@@ -107,59 +91,32 @@ namespace Online_Learning_Platform.Controllers
                 return BadRequest();
             }
 
-            try
-            {
-                _context.Update(updatedCourse);
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Courses.Any(c => c.CourseId == id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _courseRepository.UpdateCourseAsync(updatedCourse);
             return RedirectToAction(nameof(GetAllCourses));
-
         }
 
-        // POST: Delete a course
         [HttpPost]
         [Authorize(Roles = "Admin,Teacher")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteCourse(int id)
         {
-            var course = await _context.Courses.FindAsync(id);
-            if (course == null)
-            {
-                return NotFound();
-            }
-
-            _context.Courses.Remove(course);
-            await _context.SaveChangesAsync();
+            await _courseRepository.DeleteCourseAsync(id);
             return RedirectToAction(nameof(GetAllCourses));
         }
 
-        // POST: Delete a course
         [HttpPost]
-        public async Task<IActionResult> EnrolleStudent(int id)
+        public async Task<IActionResult> EnrollStudent(int id)
         {
-            var Studentid = _userManager.GetUserId(User);
+            var studentId = _userManager.GetUserId(User);
 
             var enroll = new Enrollment()
             {
                 CourseId = id,
-                StudentId = Studentid
+                StudentId = studentId
             };
 
-            _context.Enrollments.Add(enroll);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("getallcourses");
+            await _courseRepository.EnrollStudentAsync(enroll);
+            return RedirectToAction("GetAllCourses");
         }
     }
 }

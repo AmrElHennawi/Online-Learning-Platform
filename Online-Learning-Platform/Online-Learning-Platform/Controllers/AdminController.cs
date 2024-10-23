@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Online_Learning_Platform.DataContext;
 using Online_Learning_Platform.Models;
 using Online_Learning_Platform.ViewModels;
@@ -13,17 +12,11 @@ namespace Online_Learning_Platform.Controllers
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
-        private readonly RoleManager<IdentityRole> roleManager;
         private readonly UserManager<AppUser> userManager;
-        private readonly DBContext _dbcontext;
 
-        public AdminController(RoleManager<IdentityRole> roleManager,
-                                       UserManager<AppUser> userManager,
-                                       DBContext dbcontext)
+        public AdminController(UserManager<AppUser> userManager)
         {
-            this.roleManager = roleManager;
             this.userManager = userManager;
-            _dbcontext = dbcontext;
         }
 
         [HttpPost]
@@ -37,16 +30,8 @@ namespace Online_Learning_Platform.Controllers
             user.IsActive = active; // Update the Active status
             var result = await userManager.UpdateAsync(user);
 
-            if (result.Succeeded)
-            {
-                // Redirect to ListUsers action after updating the user
-                return RedirectToAction("ListUsers");
-            }
-            else
-            {
-                // Handle errors, maybe show an error view or message
-                return View("Error"); // You can return an error view or handle accordingly
-            }
+            return RedirectToAction("ListUsers");
+
         }
 
         [HttpGet]

@@ -4,6 +4,8 @@ using Online_Learning_Platform.Services;
 using Online_Learning_Platform.DataContext;
 using Online_Learning_Platform.Models;
 using Online_Learning_Platform.CustomMiddleware;
+using Online_Learning_Platform.Interfaces;
+using Online_Learning_Platform.Repositories;
 
 namespace Online_Learning_Platform
 {
@@ -25,8 +27,10 @@ namespace Online_Learning_Platform
 				.AddEntityFrameworkStores<DBContext>();
 
             builder.Services.AddScoped<PermissionService>();
+            builder.Services.AddScoped<IAccountService, AccountService>();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
-            var app = builder.Build();
+			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())

@@ -1,0 +1,67 @@
+﻿@model Online_Learning_Platform.ViewModels.ProfileViewModel
+
+@{
+  ViewData["Title"] = "User Profile";
+}
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- User Info Card -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h3>User Profile</h3>
+        </div>
+        <div class="card-body">
+          <p><strong>Name:</strong> @Model.User.FirstName @Model.User.LastName</p>
+          <p><strong>Email:</strong> @Model.User.Email</p>
+          <p><strong>Username:</strong> @Model.User.UserName</p>
+          <p><strong>Role:</strong> @Model.Role</p>
+        </div>
+      </div>
+    </div>
+    @if (@Model.Role != "Admin")
+    {
+      <!-- Courses Section -->
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-success text-white">
+            <h3>@(Model.Role == "Teacher" ? "Courses You Teach" : "Courses You're Enrolled In")</h3>
+          </div>
+          <div class="card-body">
+            @if (Model.Courses != null && Model.Courses.Any())
+            {
+              <table class="table table-striped">
+                <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Progress</th>
+                  <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var course in Model.Courses)
+                {
+                  <tr>
+                    <td>@course.Title</td>
+                    <td>@course.Description</td>
+                    <td>@course.Progress %</td>
+                    <td>
+                      <a class="btn btn-primary btn-sm" href="@Url.Action("GetCourse", "Course", new { id = course.CourseId })">View</a>
+                    </td>
+                  </tr>
+                }
+                </tbody>
+              </table>
+            }
+            else
+            {
+              <p>No courses found.</p>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

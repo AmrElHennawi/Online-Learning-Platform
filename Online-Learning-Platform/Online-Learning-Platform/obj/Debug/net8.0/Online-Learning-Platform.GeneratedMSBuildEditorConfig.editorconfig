@@ -17,63 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Online_Learning_Platform
 build_property.RootNamespace = Online_Learning_Platform
-build_property.ProjectDir = D:\Online-Learning-Platform\Online-Learning-Platform\Online-Learning-Platform\
+build_property.ProjectDir = C:\Users\Amr Khaled\Desktop\Programming\My-Github\Online-Learning-Platform\Online-Learning-Platform\Online-Learning-Platform\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Online-Learning-Platform\Online-Learning-Platform\Online-Learning-Platform
+build_property.MSBuildProjectDirectory = C:\Users\Amr Khaled\Desktop\Programming\My-Github\Online-Learning-Platform\Online-Learning-Platform\Online-Learning-Platform
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Account/Login.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Account/Register.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Account/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxwcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Admin/EditRolesInUser.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Admin/EditRolesInUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFJvbGVzSW5Vc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Admin/ListUsers.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Admin/ListUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/CreateCourse.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/CreateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZUNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/GetAllCourses.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/GetAllCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEdldEFsbENvdXJzZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/GetCourse.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/GetCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEdldENvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/UpdateCourse.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Course/UpdateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFVwZGF0ZUNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Home/Index.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/_ViewImports.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/_ViewStart.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Shared/_Layout.cshtml]
+[C:/Users/Amr Khaled/Desktop/Programming/My-Github/Online-Learning-Platform/Online-Learning-Platform/Online-Learning-Platform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s0hhqcxtwt

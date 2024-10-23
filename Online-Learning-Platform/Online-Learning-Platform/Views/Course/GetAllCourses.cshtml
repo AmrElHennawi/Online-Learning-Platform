@@ -1,5 +1,5 @@
 ﻿@inject PermissionService ps;
-@model IEnumerable<Course>
+@model IEnumerable<Online_Learning_Platform.Models.Course>
 
 @{
     ViewData["Title"] = "All Courses";
@@ -7,6 +7,15 @@
 
 <div class="container mt-5">
     <h2 class="mb-4">All Courses</h2>
+
+    <!-- Search form -->
+    <form asp-action="GetAllCourses" method="get" class="form-inline mb-4">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" name="searchString" placeholder="Search for courses..." value="@ViewData["CurrentFilter"]" />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -40,9 +49,9 @@
             }
         </tbody>
     </table>
+
     @if (await ps.CheckTypeAsync(User, "Teacher"))
     {
         <a class="btn btn-success" href="@Url.Action("CreateCourse", "Course")">Create New Course</a>
     }
-
 </div>
